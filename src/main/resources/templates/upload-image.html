@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Image</title>
+</head>
+<body>
+<h1>Upload Image</h1>
+<form action="/" method="post" enctype="multipart/form-data">
+  <input type="file" name="file"><br><br>
+  <input type="submit" value="Upload">
+</form>
+<hr>
+<h2>Uploaded Image</h2>
+<img src="/display-image" alt="Uploaded Image"
+     th:if="${imageData != null}"
+     th:src="'data:image/jpeg;base64,' + ${imageData}">
+<img src="/display-image" alt="Uploaded Image"
+     th:if="${imageData != null}"
+     th:src="'data:image/jpeg;base64,' + ${imageData}">
+<img src="/display-image" alt="Uploaded Image"
+     th:if="${imageData != null}"
+     th:src="'data:image/jpeg;base64,' + ${imageData}">
+</body>
+
+</html>
